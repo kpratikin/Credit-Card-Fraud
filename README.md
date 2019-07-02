@@ -57,13 +57,15 @@ Summary of all the models are as follows:
       <td>0.69</td>
   </tr>
   
-  <tr bgcolor="#blue">
+  <tr bgcolor="blue">
+   <font color='red'>
     <td>Oversampling (SMOTE)</td>
     <td>0.946</td> 
     <td>0.989</td>
       <td>0.92</td>
       <td>0.97</td>
       <td>0.95</td>
+    </font color='red'>
   </tr>
   
    <tr>
