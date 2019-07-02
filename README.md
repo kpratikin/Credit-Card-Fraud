@@ -28,6 +28,8 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 
 <b>Conclusion:</b>
+<b><p>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
+Thus, with use of oversampling(SMOTE) model, banks can better detect fradulent transactions.
 
 Summary of all the models are as follows:
 <p><table style="width:100%">
@@ -110,7 +112,4 @@ Summary of all the models are as follows:
       <td>0.83</td>
       <td>0.81</td>
   </tr>
-<br>
 </p>
-<b><p>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
-Thus, with use of oversampling(SMOTE) model, banks can better detect fradulent transactions.
