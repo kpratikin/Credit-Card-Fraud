@@ -2,6 +2,8 @@
 
 <b>Objective:</b><br>
 To recognize fraudulent credit card transactions.
+To understand how to work with imbalanced dataset.
+
 
 <b>Datset:</b>
 <br>The dataset is downloaded from: https://www.kaggle.com/mlg-ulb/creditcardfraud
@@ -14,5 +16,94 @@ To recognize fraudulent credit card transactions.
 It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we do not have original features and more background information about the data. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 <b>Analysis:</b>
+<br><b>Following are few techniques I have tried to cater the issue of imbalanced dataset.
+<ol><li> Cross-Validation
+    <li> Oversample minority class (i.e. fradulent transactions)
+    <li> Ensemble modelling (Random Forrest)
+    <li> Bagging
+    <li> Boosting (XGBoost, ADABoost)
+    <li> Changing the Threshold
 <br> Refer Code
+
+Conclusion:
+<table style="width:100%">
+  <tr>
+    <th>Model</th>
+    <th>Accuracy</th>
+    <th>AUC</th> 
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1-Score</th>
+  </tr>
+  <tr>
+    <td>Original Model</td>
+    <td>0.99</td> 
+    <td>0.96</td>
+      <td>0.6</td>
+      <td>0.87</td>
+      <td>0.71</td>
+  </tr>
+    
+  <tr>
+    <td>Cross Validation</td>
+    <td>0.99</td> 
+    <td></td>
+      <td>0.59</td>
+      <td>0.85</td>
+      <td>0.69</td>
+  </tr>
+  
+  <tr bgcolor="#32CD32">
+    <td>Oversampling (SMOTE)</td>
+    <td>0.946</td> 
+    <td>0.989</td>
+      <td>0.92</td>
+      <td>0.97</td>
+      <td>0.95</td>
+  </tr>
+  
+   <tr>
+    <td>Ensemble (Random Forrest)</td>
+    <td>0.99</td> 
+    <td>0.928</td>
+      <td>0.93</td>
+      <td>0.75</td>
+      <td>0.83</td>
+  </tr>
+  
+   <tr>
+    <td>Bagging (Decision Trees)</td>
+    <td>0.99</td> 
+    <td>0.97</td>
+      <td>0.61</td>
+      <td>0.88</td>
+      <td>0.72</td>
+  </tr>
+  
+  <tr>
+    <td>Boosting (XGBOOST)</td>
+    <td>0.99</td> 
+    <td>0.98</td>
+      <td>0.79</td>
+      <td>0.92</td>
+      <td>0.85</td>
+  </tr>
+  
+  <tr>
+    <td>Boosting (ADABOOST)</td>
+    <td>0.99</td> 
+    <td>0.969</td>
+      <td>0.83</td>
+      <td>0.65</td>
+      <td>0.73</td>
+  </tr>
+  
+  <tr>
+    <td>Threshold change to 10%</td>
+    <td>0.99</td> 
+    <td>0.968</td>
+      <td>0.79</td>
+      <td>0.83</td>
+      <td>0.81</td>
+  </tr>
 
