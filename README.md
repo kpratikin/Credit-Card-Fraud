@@ -1,7 +1,8 @@
 <h1> Credit Card Fraud Detection</h1>
 
 <b>Objective:</b><br>
-To detect fraudulent credit card transactions and to understand how to work with imbalanced dataset.
+<ul><li>To detect fraudulent credit card transactions and 
+ <li>to understand how to work with imbalanced dataset.</ul>
 
 
 <b>Datset:</b>
