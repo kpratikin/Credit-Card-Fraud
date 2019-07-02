@@ -1,8 +1,7 @@
 <h1> Credit Card Fraud Detection</h1>
 
 <b>Objective:</b><br>
-To recognize fraudulent credit card transactions.
-To understand how to work with imbalanced dataset.
+To detect fraudulent credit card transactions and to understand how to work with imbalanced dataset.
 
 
 <b>Datset:</b>
@@ -26,6 +25,8 @@ It contains only numerical input variables which are the result of a PCA transfo
 <br> Refer Code
 
 Conclusion:
+
+Summary of all the models are as follows:
 <table style="width:100%">
   <tr>
     <th>Model</th>
@@ -53,7 +54,7 @@ Conclusion:
       <td>0.69</td>
   </tr>
   
-  <tr bgcolor="#32CD32">
+  <tr bgcolor="#blue">
     <td>Oversampling (SMOTE)</td>
     <td>0.946</td> 
     <td>0.989</td>
@@ -107,3 +108,5 @@ Conclusion:
       <td>0.81</td>
   </tr>
 
+<b>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
+Thus, with use of oversampling(SMOTE) model, banks can better detect fradulent transactions.
