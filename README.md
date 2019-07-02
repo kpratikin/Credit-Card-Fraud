@@ -58,7 +58,7 @@ Summary of all the models are as follows:
   </tr>
   
   <tr bgcolor="blue">
-    <td><b>Oversampling (SMOTE)</b></td>
+    <td><b><font color='blue'>Oversampling (SMOTE)</b></td>
     <td><b>0.946</b></td> 
     <td><b>0.989</b></td>
       <td><b>0.92</b></td>
@@ -110,6 +110,7 @@ Summary of all the models are as follows:
       <td>0.83</td>
       <td>0.81</td>
   </tr>
+<br>
 </p>
 <b><p>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
 Thus, with use of oversampling(SMOTE) model, banks can better detect fradulent transactions.
