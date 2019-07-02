@@ -27,7 +27,7 @@ It contains only numerical input variables which are the result of a PCA transfo
     <li> Changing the Threshold
 
 
-<b>Conclusion:
+<b>Conclusion:</b>
 
 Summary of all the models are as follows:
 <p><table style="width:100%">
