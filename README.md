@@ -2,7 +2,7 @@
 
 <b>Objective:</b><br>
 <ul><li>To detect fraudulent credit card transactions and 
- <li>to understand how to work with imbalanced dataset.</ul>
+ <li>To understand how to work with imbalanced dataset.</ul>
 
 
 <b>Datset:</b>
@@ -16,7 +16,7 @@
 It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we do not have original features and more background information about the data. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 <b>Analysis:</b>
-<br><b>Following are few techniques I have tried to cater the issue of imbalanced dataset.
+<br>Following are few techniques I have tried to cater the issue of imbalanced dataset.
 <ol><li> Cross-Validation
     <li> Oversample minority class (i.e. fradulent transactions)
     <li> Ensemble modelling (Random Forrest)
@@ -25,10 +25,10 @@ It contains only numerical input variables which are the result of a PCA transfo
     <li> Changing the Threshold
 <br> Refer Code
 
-Conclusion:
+<b>Conclusion:
 
 Summary of all the models are as follows:
-<table style="width:100%">
+<p><table style="width:100%">
   <tr>
     <th>Model</th>
     <th>Accuracy</th>
@@ -108,6 +108,6 @@ Summary of all the models are as follows:
       <td>0.83</td>
       <td>0.81</td>
   </tr>
-
-<b>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
+</p>
+<b><p>Out of all the methods we tried, we found that oversampling(SMOTE) method is best suited for our analysis. Significant high F1, Precision and recall scores are observed at a cost of small decline in the accuracy score.
 Thus, with use of oversampling(SMOTE) model, banks can better detect fradulent transactions.
