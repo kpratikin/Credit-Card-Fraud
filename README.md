@@ -1,7 +1,7 @@
 <h1> Credit Card Fraud Detection</h1>
 
 <b>Objective:</b><br>
-To recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
+To recognize fraudulent credit card transactions.
 
 <b>Datset:</b>
 <br>The dataset is downloaded from: https://www.kaggle.com/mlg-ulb/creditcardfraud
