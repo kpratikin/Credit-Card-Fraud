@@ -16,7 +16,8 @@
 It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we do not have original features and more background information about the data. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 <b>Analysis:</b>
-<br> For detailed analysis refer the Code:
+<br> For detailed analysis refer the Code: https://github.com/kpratikin/Credit-Card-Fraud/blob/master/Credit%20Card%20Fraud%20Final.ipynb
+<br>
 <br>Following are the techniques I have tried out.
 <ol><li> Normalization of variables
     <li> Cross-Validation
