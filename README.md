@@ -1,4 +1,4 @@
-<h1> Credit Card Fraud Detection</h1>
+<h1> Credit Card Fraud Detection </h1>
 
 <b>Objective:</b><br>
 <ul><li>To detect fraudulent credit card transactions and 
